@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252"> 
+	<title>Popup contact form </title>
+	<meta name="robots" content="noindex, nofollow">	
+	<link rel="stylesheet" href="Popup%20contact%20form_files/elements.css">
+	<script src="Popup%20contact%20form_files/ga.js" async="" type="text/javascript"></script><script src="Popup%20contact%20form_files/my_js.js"></script>	
+	<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-43981329-1']);
+	_gaq.push(['_trackPageview']);
+	(function () {
+	var ga = document.createElement('script');
+	ga.type = 'text/javascript';
+	ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+</head> 
+ <!-- body starts here -->
+ <body id="bdy" style="overflow:hidden;">
+ 
+ <div style="display: none;" id="abc">
+ 
+	 <!-- Popup div starts here -->
+ <div id="popupContact"> 
+
+	<!-- contact us form -->
+		<form action="#" method="post" id="form">
+			<img src="Popup%20contact%20form_files/3.png" id="close" onclick="div_hide()">
+			<h2>Contact Us</h2><hr>
+			<input name="name" id="name" placeholder="Name" type="text">
+			
+			<input name="email" id="email" placeholder="Email" type="text">
+			
+			<textarea name="message" placeholder="Message" id="msg"></textarea>
+			
+			<a id="submit" href="javascript:%20check_empty()">Send</a>
+			
+			<p><span>Note :</span> In this demo, we have stopped email sending functionality.</p>
+		</form>
+ </div> 
+ <!-- Popup div ends here -->
+ </div>
+ <!-- display popup button -->
+    
+	        <button id="popup" onclick="div_show()">Popup</button></center>
+
+</body><!-- body ends here --></html>
