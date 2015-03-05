@@ -4,13 +4,6 @@
 /*body {
    transform: scale(1.2);
 }
- */
-/* Links */
-a,
-a:focus,
-a:hover {
-  color: #333;
-}
 
 /* Custom default button */
 .btn-default,
@@ -28,15 +21,34 @@ a:hover {
  */
 
 html,
-body {
+body{
   height: 100%;
-  background-color: #fff;
+  background-color: #93d6c3;
 }
-body {
+body{
   color: #000;
   text-align: center;
   text-shadow: none;
 }
+
+body{
+  /*background:url("sunset.jpg") no-repeat center fixed; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.site-wrapper {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
@@ -212,9 +224,9 @@ body {
 }
 
 	.avatar {
-    width:150px;
-    height:150px;
-    border:6px solid black;
+    width:250px;
+    height:250px;
+    border:6px solid #000;
      background-position: 50% 50%;
     background-repeat: no-repeat;
     border-radius: 50%;
@@ -278,8 +290,15 @@ body {
   /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
 }
 
+
+/* Links */
 a,
-a:focus,
+a:focus{
+  color: #226f45;
+  text-decoration: none;
+}
+
 a:hover {
-  color: #333;
+  color: #00113a;
+  text-decoration: none;
 }
