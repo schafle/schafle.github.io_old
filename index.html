@@ -20,9 +20,18 @@ This site is developed using bootstrap template and fullpage.js
 	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 	<style>
 	
-	.avatar {
-    width:250px;
-    height:250px;
+	.avatar512 {
+    width:40%;
+    height:40%;
+    border:6px solid #fff;
+     background-position: 50% 50%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+	}
+
+	.avatar256 {
+    width:256px;
+    height:256px;
     border:6px solid #fff;
      background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -259,7 +268,7 @@ This site is developed using bootstrap template and fullpage.js
 <body>
 <div id="fullpage">
 	<div class="section " id="section0">
-		<img class="avatar" src="Suraj_Chafle.jpg"></img
+		<img class="avatar256" src="Suraj_Chafle.jpg"></img
 		<div class="slide">
 			<h1>Suraj Chafle</h1>
 			<h2>Graduate Student @IllinoisTech</h2>
@@ -342,7 +351,7 @@ This site is developed using bootstrap template and fullpage.js
 	<hr class="featurette-divider">
 
 	<div class="featurette">
-        <img class="featurette-image pull-right" src="imgs/laneDetection.png">
+        <img class="featurette-image avatar512 pull-right" src="imgs/laneDetection.png">
         <h2 class="featurette-heading">Lane Detection: <span class="muted"> Extraction of Road and Lane boundary from Satellite Imagery</span></h2>
         <p class="lead">
 		Google satellite imagery API is used to download images for given set of lat-longs. Each image is processed to find edges using Canny edge detector which are then filtered considering certain criteria. Output is start and end point of each detected lane in each image which is stored in the form of polyline. 
@@ -354,7 +363,7 @@ This site is developed using bootstrap template and fullpage.js
 	<hr class="featurette-divider">
 
 	<div class="featurette">
-        <img class="featurette-image pull-left" src="imgs/awsbenchmarking.png">
+        <img class="featurette-image" src="imgs/awsbenchmarking.png">
         <h2 class="featurette-heading">Benchmarking AWS: <span class="muted">Benchmarking EC2 instance for CPU, Memory and Disk performance</span></h2>
         <p class="lead">
 	A benchmarking tool developed in C is used to do multiple floating point operations on AWS EC2 t2.micro instance for 600 seconds and number of operations done per second is measured. For memory, a huge chunk of memory is set and cleared and time required is measured. Similarly for disk, data is written to disk and time is measured. Code is written to avoid cache optimization. 
