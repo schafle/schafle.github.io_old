@@ -262,6 +262,15 @@ This site is developed using bootstrap template and fullpage.js
 				fitToSection: false
 			});
 		});
+		$(document).ready(function() {
+			$('#fullpage1').fullpage({
+				anchors: ['firstPage'],
+				sectionsColor: ['#4A6FB1'],
+				autoScrolling: false,
+				css3: true,
+				fitToSection: false
+			});
+		});
 	</script>
 
 </head>
@@ -292,7 +301,7 @@ This site is developed using bootstrap template and fullpage.js
           <img style="display: block;margin-left: auto;margin-right: auto; width: 140px; height: 140px" data-src="holder.js/140x140" src="imgs/iitc_logo.png">
           <h2 style="text-align: center;">Illinois Institute of Technology, Chicago</h2>
 	  <h3 style="text-align: center;">Master of Science in <br/> Computer Science</h3>
-	  <h4 style="text-align: center;">GPA: 3.5/4</h4>
+	  <h4 style="text-align: center;">GPA: 3.57/4</h4>
           <p style="text-align: center;" class="lead"></p>
           <!-- <p style="text-align: center;"><a class="btn" href="">View details »</a></p> -->
         </div><!-- /.span4 -->
@@ -313,22 +322,58 @@ This site is developed using bootstrap template and fullpage.js
 	<h2 style="text-align: center; font-size: 100px; margin-top: 100px; margin-bottom: 100px;">Projects</h2>
 
 	<div class="featurette">
-        <img style="width: 512px; height: 500px" class="featurette-image pull-left" src="imgs/distSearch.png">
+        <img style="width: 512px; height: 500px" class="featurette-image avatar512 pull-right" src="imgs/funWithFlags.jpg">
+        <h2 class="featurette-heading">Fun with flags: <span class="muted">A web based game hosted on heroku </span></h2>
+        <p class="lead">
+			Inspired by Big Bang Theory's Sheldon Cooper, this is my humble attempt to create a game involving flags. It is a simple Django application hosted on heroku. User
+			can guess the Capital city of the country or Guess the country from the flag. More fun features are in line.
+		<a class="btn btn-primary btn-small" href="https://serene-mesa-14768.herokuapp.com/game">Learn more</a></p>
+		<span class="label label-info">Django</span>
+		<span class="label label-important">Python</span>  
+		<span class="label label-success">Postgres</span> 
+		<span class="label label-info">Heroku</span>  
+		<span class="label label-info">HTML</span>  
+		<span class="label label-info">JS</span> 
+    </div>
+
+    <hr class="featurette-divider">
+	
+	<div class="featurette">
+        <img style="width: 512px; height: 500px" class="featurette-image pull-left" src="imgs/nautilus.png">
+        <h2 class="featurette-heading">Multiprogramming with Nautilus</h2>
+        <p class="lead"> 
+		Working with Prof. Kyle Hale to achieve multiprogramming with virtual
+		machines for <a href="http://nautilus.halek.co/">Nautilus</a> Aerokernel without implementing an entire heavyweight
+		process subsystem by leveraging virtualization support by Intel.
+		</p>
+	<span class="label label-success">C</span>  
+	<span class="label label-info">Assebly</span>  
+	<span class="label label-info">Virtualization</span>
+    </div>
+	  
+	<hr class="featurette-divider">
+	
+	<div class="featurette">
+        <img style="width: 512px; height: 500px" class="featurette-image pull-right" src="imgs/distSearch.png">
         <h2 class="featurette-heading">DistSearch: <span class="muted">Optimizing Search in Un-Sharded Large-Scale Distributed Systems.</span></h2>
-        <p class="lead">Worked with Prof. Ioan Raicu to develop a framework with distributed query distribution overcoming limited parallel connection in document search with centralized server.	Publication accepted at SC'16. <a class="btn btn-primary btn-small" href="http://wtpoo.github.io/distSearch/">Learn more</a></p>
+        <p class="lead">Worked with Prof. Ioan Raicu to develop a framework with distributed query distribution overcoming limited parallel connection in document search with centralized server. This research was presented at Supercomputing Conference 2016. 
+		<a class="btn btn-primary btn-small" href="http://sc16.supercomputing.org/sc-archive/tech_poster/poster_files/post153s2-file3.pdf">Paper</a>
+		<a class="btn btn-warning btn-small" href="http://sc16.supercomputing.org/sc-archive/tech_poster/poster_files/post153s2-file2.pdf">Poster</a>
+		<a class="btn btn-success btn-small" href="https://github.com/wtpoo/distSearch">Codebase</a>
+		</p>
 	<span class="label label-success">C++</span>  <span class="label label-success">Shell</span> <span class="label label-info">AWS</span>  <span class="label label-info">Lucene</span>  <span class="label label-info">SolR</span> 
-      </div>
+    </div>
 
-      <hr class="featurette-divider">
+    <hr class="featurette-divider">
 
-      <div class="featurette">
-        <img class="featurette-image pull-right" src="browser-icon-chrome.png">
+    <div class="featurette">
+        <img class="featurette-image pull-left" src="browser-icon-chrome.png">
         <h2 class="featurette-heading">Travelogue: <span class="muted"> Personal travel tracking website</span></h2>
         <p class="lead">A django application where one can log train journeys, maintain details of each journey and see statistics with journey timelines. <a class="btn btn-primary btn-small" href="http://sooraj1719.pythonanywhere.com/user/SurajChafale">Learn more</a></p>
-	<span class="label label-success">Python</span>  <span class="label label-info">Javascript</span>  <span class="label label-info">D3.js</span>  <span class="label label-info">Jquery</span>  <span class="label label-important">MySQL</span> <span class="label label-success">Fb-login</span>
-      </div>
+		<span class="label label-success">Python</span>  <span class="label label-info">Javascript</span>  <span class="label label-info">D3.js</span>  <span class="label label-info">Jquery</span>  <span class="label label-important">MySQL</span> <span class="label label-success">Fb-login</span>
+     </div>
 	
-      <hr class="featurette-divider">
+    <hr class="featurette-divider">
 
       
 
@@ -355,8 +400,9 @@ This site is developed using bootstrap template and fullpage.js
         <h2 class="featurette-heading">Lane Detection: <span class="muted"> Extraction of Road and Lane boundary from Satellite Imagery</span></h2>
         <p class="lead">
 		Google satellite imagery API is used to download images for given set of lat-longs. Each image is processed to find edges using Canny edge detector which are then filtered considering certain criteria. Output is start and end point of each detected lane in each image which is stored in the form of polyline. 
-	<a class="btn btn-primary btn-small" href="https://www.youtube.com/watch?v=X0eVSH3Dan8">Learn more</a></p>
-	<a class="label label-success">Python</a>  <span class="label label-info">OpenCV</span>
+		<a class="btn btn-primary btn-small" href="https://www.youtube.com/watch?v=X0eVSH3Dan8">Learn more</a></p>
+		<a class="label label-success">Python</a>  
+		<span class="label label-info">OpenCV</span>
       </div>
 	
 
@@ -368,7 +414,10 @@ This site is developed using bootstrap template and fullpage.js
         <p class="lead">
 	A benchmarking tool developed in C is used to do multiple floating point operations on AWS EC2 t2.micro instance for 600 seconds and number of operations done per second is measured. For memory, a huge chunk of memory is set and cleared and time required is measured. Similarly for disk, data is written to disk and time is measured. Code is written to avoid cache optimization. 
 	<a class="btn btn-primary btn-small" href="https://github.com/wtpoo/BenchmarkingTool">Learn more</a></p>
-	<span class="label label-success">C</span>  <span class="label label-info">Shell</span>  <span class="label label-important">Gnuplot</span>  <span class="label label-info">AWS</span> 
+	<span class="label label-success">C</span>  
+	<span class="label label-info">Shell</span>  
+	<span class="label label-important">Gnuplot</span>  
+	<span class="label label-info">AWS</span> 
       </div>
 
 	<hr class="featurette-divider">
